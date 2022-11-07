@@ -1,0 +1,36 @@
+.sponsors {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem;
+	gap: 3rem;
+}
+
+.sponsors > p {
+	color: white;
+	font-family: "IBM Plex Sans";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 2.5rem;
+}
+
+.sponsors > div {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 80vw;
+}
+
+.sponsors > div > img {
+	height: 4rem;
+}
+
+@media only screen and (max-width: 818px) {
+	.sponsors > div {
+		width: 95vw;
+	}
+	.sponsors > div > img {
+		height: 3rem;
+	}
+}
