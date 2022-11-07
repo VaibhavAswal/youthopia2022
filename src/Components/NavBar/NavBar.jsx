@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 const NavBar = () => {
 	//hiding navbar in home
-	const [navVisible, setNavVisible] = useState("");
+	const [navVisible, setNavVisible] = useState("navHidden");
 	function showNavbar() {
 		// When the scroll is greater than 50 viewport height, add the headerVisible class to the navbar tag
 		if (this.scrollY <= 50) {
