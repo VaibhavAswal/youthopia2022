@@ -1,71 +1,113 @@
-.left {
-    width:30%;
-    height: 100%;
-    
-    
+/* .class2 {
+	vertical-align: middle;
+} */
+/* .container1 {
+	align-items: center;
+} */
+/* .main {
+	padding-top: 1.5rem;
+	justify-content: center;
+	align-items: center;
+	margin-right: 2rem;
+	margin-left: 3rem;
+	left: 10vw;
+} */
 
+.youthopiacomp {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	padding: 4rem 0;
 }
 
-
-.right{
-    width:40%;
-    height: 100%;
-    align-items: center;
-
+.youthopiaContent {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 65%;
+	gap: 4rem;
 }
 
-.class2{
-
-vertical-align: middle;
-
-}
-.container1{
-    align-items: center;
-}
-.main{
-    padding-top: 1.5rem;
-    justify-content: center;
-    align-items: center;
-    margin-right: 2rem;
-    margin-left:3rem;
-    left:10vw;
-}
-.text1{
-    
-    
-        font-family: 'IBM Plex Sans';
-        font-style: normal;
-        font-weight: 400;
-        font-size:1.3vw;
-        color: #FFFFFF;
-        flex: none;
-        order: 0;
-        flex-grow: 0;
+.youthopiacompLeft > img {
+	width: 30rem;
 }
 
-.text2{
-    font-family: 'IBM Plex Sans';
-        font-style: normal;
-        font-size: 1.3vw;
-        display: flex;
-        align-items: center;
-        background: linear-gradient(90deg, #F7797D 0%, #C471ED 52.08%, #12C2E9 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        text-fill-color: transparent;
-        flex: none;
-        order: 0;
-        flex-grow: 0;
+.youthopiaRight {
+	justify-content: flex-start;
 }
-.whitevariant{
-    width: 3rem;
 
+.yRightTop {
+	display: flex;
+	gap: 1.5rem;
 }
-.Line{
-    
 
+.ywhitevariant {
+	width: 3rem;
 }
-.DITU{
-width: 3rem;
+.yDITU {
+	width: 3rem;
+}
+
+.yRightMiddle {
+	margin-top: 2rem;
+}
+
+.text1 {
+	font-family: "IBM Plex Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.4rem;
+	color: #ffffff;
+}
+
+.yRightEnd {
+	margin-top: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 0.5rem;
+}
+
+.text2 {
+	font-family: "IBM Plex Sans";
+	font-style: normal;
+	font-size: 1.4rem;
+	background: linear-gradient(90deg, #f7797d 0%, #c471ed 52.08%, #12c2e9 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
+.yRightEnd > img {
+	margin-top: 6px;
+	width: 1.5rem;
+}
+
+@media only screen and (max-width: 1435px) {
+	.youthopiaContent {
+		width: 70%;
+	}
+	.youthopiacompLeft > img {
+		width: 25rem;
+	}
+}
+
+@media only screen and (max-width: 1278px) {
+	.youthopiaContent {
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 1045px) {
+	.youthopiaContent {
+		flex-direction: column;
+	}
+	.youthopiacompLeft > img {
+		width: 80vw;
+		max-width: 35rem;
+	}
+	.yRightMiddle {
+		max-width: 40rem;
+	}
 }
