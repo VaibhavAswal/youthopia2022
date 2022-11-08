@@ -1,0 +1,123 @@
+.footer {
+    background-color: #0C3844;
+    height: 513px;
+    padding-left: 15vw;
+    padding-top: 6vw;
+    color: white;
+}
+
+.footer>.footer-content{
+    display: flex;
+}
+
+.footer>.footer-content>.aboutYouthopia{
+    width: 25%;
+}
+
+.footer>.footer-content>.aboutYouthopia>h1 {
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.8vw;
+    line-height: 150%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.footer>.footer-content>.aboutYouthopia>p{
+    font-family: 'IBM Plex Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 1vw;
+line-height: 150%;
+flex: none;
+order: 2;
+flex-grow: 0;
+} 
+
+
+.footer>.footer-content>.footerEvent>h1 {
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.8vw;
+    line-height: 150%;
+    margin-top: 2%;
+    margin-bottom: 35%;
+}
+
+.footer>.footer-content>.footerEvent{
+    margin: 0 5vw;
+    margin-top: 0.4vw;
+}
+
+.footer>.footer-content>.footerEvent>p{
+    font-family: 'IBM Plex Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 1vw;
+line-height: 150%;
+flex: none;
+order: 2;
+flex-grow: 0;
+margin-bottom: 1vw;
+} 
+
+.footer>.footer-content>.contactUs{
+    width: 25%;
+}
+
+.footer>.footer-content>.contactUs>h1 {
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.8vw;
+    line-height: 150%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.footer>.footer-content>.contactUs>p{
+    font-family: 'IBM Plex Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 1vw;
+line-height: 150%;
+flex: none;
+order: 2;
+flex-grow: 0;
+margin-bottom: 1.8vw;
+display: flex;
+} 
+
+.footer>.footer-content>.contactUs>.phno{
+    font-size: 1.8vw;
+}
+
+.footer>.footer-content>.contactUs>p>.location-logo{
+    margin-right: 1vw;
+    height: 3vw;
+}
+.footer>.footer-content>.contactUs>p>.call-logo{
+    margin-right: 1vw;
+    height: 3vw;
+}
+
+.footer>.footer-content>.socials{
+    margin-left: 2vw;
+}
+.footer>.footer-content>.socials>h1 {
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.8vw;
+    line-height: 150%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.footer>.footer-content>.socials>.icons>img{
+    margin-right: 2vw;
+    height: 3vw;
+}
+
