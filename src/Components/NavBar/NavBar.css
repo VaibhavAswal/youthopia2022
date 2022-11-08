@@ -27,6 +27,13 @@
 	gap: 3rem;
 }
 
+.navCenter > .active {
+	background: linear-gradient(90deg, #f7797d 0%, #c471ed 52.08%, #12c2e9 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
 .navCenter > p {
 	font-style: normal;
 	font-weight: 400;
@@ -110,7 +117,8 @@
 	border-bottom: 2px solid transparent;
 }
 
-.mobileMenu > p .active {
+.mobileMenu > .active {
+	border-bottom: 2px solid white;
 	background: linear-gradient(90deg, #f7797d 0%, #c471ed 52.08%, #12c2e9 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -118,8 +126,10 @@
 }
 
 .mobileMenu > p:hover {
-	border-bottom: 2px solid white;
-	font-weight: 800;
+	background: linear-gradient(90deg, #f7797d 0%, #c471ed 52.08%, #12c2e9 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
 }
 
 @media only screen and (max-width: 1240px) {

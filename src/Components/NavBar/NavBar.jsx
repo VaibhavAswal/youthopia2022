@@ -29,7 +29,7 @@ const NavBar = () => {
 					<img src={logo} alt="logo" />
 				</div>
 				<div className="navCenter">
-					<p>Home</p>
+					<p className="active">Home</p>
 					<p>Events</p>
 					<p>Social Media</p>
 					<p>Gallery</p>
