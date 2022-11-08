@@ -3,15 +3,89 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 8rem 0;
+	padding: 8rem 0;
+	overflow: hidden;
 }
 
-.getApp > img {
-	width: 70%;
+.getAppContentB {
+	background: #001d25;
+	border-radius: 50px;
+	width: 65%;
+	position: relative;
+	display: flex;
 }
 
-@media only screen and (max-width: 740px) {
-	.getApp > img {
-		width: 90%;
+.getAppContentB::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	margin: -1px;
+	background: linear-gradient(
+		76.15deg,
+		#f7797d -3.09%,
+		#c471ed 42.11%,
+		#12c2e9 83.69%
+	);
+	border-radius: inherit;
+}
+
+.getAppContent {
+	padding: 3rem;
+	display: flex;
+	flex-direction: column;
+	color: white;
+	width: 50%;
+}
+
+.getAppContent > .title {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 3rem;
+}
+
+.getAppContent > .desc {
+	margin-top: 1rem;
+	font-size: 1.2rem;
+	font-style: normal;
+	font-weight: 400;
+}
+
+.getAppContent > .downloadText {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1.2rem;
+	margin-top: 2rem;
+}
+.getAppContent > img {
+	width: 12rem;
+	margin-top: 0.75rem;
+}
+
+.getAppContentSS {
+	position: absolute;
+	right: -5rem;
+	top: -5rem;
+	width: 30vw;
+}
+@media only screen and (max-width: 1435px) {
+	.getAppContentB {
+		width: 70%;
+	}
+}
+
+@media only screen and (max-width: 1278px) {
+	.getAppContentB {
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 1045px) {
+	.getAppContentB {
+		width: 80vw;
+		max-width: 35rem;
 	}
 }
