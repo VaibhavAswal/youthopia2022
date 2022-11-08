@@ -1,32 +1,106 @@
-.StarNight{
-    margin-top: 5%;
-    background: url('../../Images/starNight1.png') no-repeat;
-    align-items: center;
-    justify-content: space-between;
-    background-position: center;
-    height: 30vw;
-    background-size: contain;
-    position: relative;
-    margin-bottom: 5vw;
+.StarNight {
+	width: 100vw;
+	position: relative;
 }
 
-.strip{
-    width: 100vw;
-    position: absolute;
-    margin-top: 25vw;
-    z-index: -1;
+.swiper {
+	margin-top: 5rem;
+	/* overflow-y: visible !important; */
+	overflow-x: hidden !important;
 }
 
-.circlelftBtn{
-    position: relative;
-    margin-top: 12.5vw;
-    margin-left: 13vw;
-    width: 3.5vw;
+.swiper-wrapper > div {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-.circlerightBtn{
-    position: relative;
-    margin-top: 12.5vw;
-    margin-left: 65vw;
-    width: 3.5vw;
-    
+
+.swiper-wrapper > div > img {
+	width: 65%;
+}
+
+.swiper-button-next {
+	right: 8vw !important;
+	width: 3.5rem !important;
+	height: 3.5rem !important;
+	background: url("../../Images/circle-right.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.swiper-button-prev {
+	left: 8vw !important;
+	width: 3.5rem !important;
+	height: 3.5rem !important;
+	background: url("../../Images/circle-left.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.swiper-button-prev::after {
+	content: "" !important;
+}
+
+.swiper-button-next::after {
+	content: "" !important;
+}
+
+.swiperLogo {
+	position: absolute;
+	top: -2rem;
+	right: 13vw;
+	z-index: 10;
+}
+
+.swiperLogo > img {
+	width: 18vw;
+}
+
+.swiperParent {
+	position: relative;
+}
+
+.startNightStrip {
+	width: 100vw;
+	background: linear-gradient(90deg, #f7797d 0%, #c471ed 52.08%, #12c2e9 100%);
+	position: absolute;
+	bottom: -4vw;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+}
+
+.startNightStrip > img {
+	opacity: 0.3;
+}
+
+@media only screen and (max-width: 1020px) {
+	.swiper-wrapper > div > img {
+		width: 70%;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.swiper-wrapper > div > img {
+		width: 90%;
+	}
+	.swiper-button-prev {
+		left: 0.5rem !important;
+	}
+	.swiper-button-next {
+		right: 0.5rem !important;
+	}
+	.swiperLogo {
+		top: -1.4rem;
+	}
+	.swiperLogo > img {
+		width: 6rem;
+	}
+	.startNightStrip > img {
+		width: 8rem;
+	}
+	.startNightStrip {
+		bottom: -1.5rem;
+	}
 }
