@@ -7,7 +7,6 @@
 	top: 0;
 	width: 100vw;
 	padding-top: 0.5rem;
-
 	z-index: 1000;
 }
 
@@ -63,6 +62,66 @@
 .navMenu > img {
 	width: 2rem;
 }
+
+.nameMenuOpen {
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 1000000;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.445);
+	backdrop-filter: blur(10px);
+	transform: translateY(-100vh);
+	transition: 0.3s ease-in;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.navMenuOpenshow {
+	transform: translateY(0);
+	border-radius: 0;
+}
+
+.navMenuCloseButton {
+	position: absolute;
+	top: 2rem;
+	right: 2rem;
+}
+
+.navMenuCloseButton > img {
+	width: 2rem;
+}
+
+.mobileMenu {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.mobileMenu > p {
+	font-weight: 600;
+	font-style: normal;
+	font-size: 2rem;
+	color: white;
+	width: max-content;
+	border-bottom: 2px solid transparent;
+}
+
+.mobileMenu > p .active {
+	background: linear-gradient(90deg, #f7797d 0%, #c471ed 52.08%, #12c2e9 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
+.mobileMenu > p:hover {
+	border-bottom: 2px solid white;
+	font-weight: 800;
+}
+
 @media only screen and (max-width: 1240px) {
 	.navCenter {
 		gap: 2.5rem;
