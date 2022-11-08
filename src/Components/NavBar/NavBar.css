@@ -7,8 +7,7 @@
 	top: 0;
 	width: 100vw;
 	padding-top: 0.5rem;
-	backdrop-filter: blur(10px);
-	background-color: rgba(0, 0, 0, 0.478);
+
 	z-index: 1000;
 }
 
@@ -50,5 +49,53 @@
 }
 
 .navHidden {
+	backdrop-filter: blur(10px);
+	background-color: rgba(0, 0, 0, 0.478);
+}
+
+.navMenu {
 	display: none;
+	padding-right: 2rem;
+	justify-content: center;
+	align-items: center;
+}
+
+.navMenu > img {
+	width: 2rem;
+}
+@media only screen and (max-width: 1240px) {
+	.navCenter {
+		gap: 2.5rem;
+	}
+	.navLeft {
+		padding-left: 2rem;
+	}
+	.navRight {
+		padding-right: 2rem;
+	}
+}
+
+@media only screen and (max-width: 935px) {
+	.navCenter,
+	.navRight {
+		display: none;
+	}
+	.navMenu {
+		display: flex;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.navbar {
+		height: 4rem;
+	}
+	.navLeft {
+		padding-left: 1rem;
+	}
+	.navMenu {
+		padding-right: 1rem;
+	}
+	.navLeft > img {
+		width: 3.5rem;
+	}
 }

@@ -2,6 +2,8 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	width: 100vw;
+
 	align-items: center;
 	padding: 2rem;
 	gap: 3rem;
@@ -16,21 +18,36 @@
 }
 
 .sponsors > div {
-	display: flex;
-	justify-content: space-around;
+	display: grid;
+	grid-template-columns: repeat(4, 25%);
 	align-items: center;
 	width: 80vw;
 }
 
-.sponsors > div > img {
+.sponsors > div > div {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.sponsors > div > div > img {
 	height: 4rem;
 }
 
 @media only screen and (max-width: 818px) {
 	.sponsors > div {
 		width: 95vw;
+		grid-template-columns: repeat(2, 50%);
+		row-gap: 3rem;
 	}
-	.sponsors > div > img {
+	.sponsors > div > div > img {
 		height: 3rem;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	.sponsors > div {
+		grid-template-columns: repeat(2, 50%);
 	}
 }

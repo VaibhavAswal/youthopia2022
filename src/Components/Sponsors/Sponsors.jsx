@@ -1,42 +1,27 @@
-import { supabase } from "../Supabase/supabaseClient";
-import { useEffect, useState } from "react";
+import burgerking from "../../Images/burgerking.png";
+import starbucks from "../../Images/starbucks.png";
+import dominos from "../../Images/dominos.png";
+import mcdonalds from "../../Images/mcdonalds.png";
+
 import "./Sponsors.css";
 
 const Sponsors = () => {
-	//getting sponser data from db
-	const [data, setData] = useState("");
-	const getData = async () => {
-		try {
-			const { data, error, status } = await supabase
-				.from("sponsors")
-				.select("*");
-
-			if (error && status !== 406) {
-				throw error;
-			}
-
-			if (data) {
-				setData(data);
-			}
-		} catch (error) {
-			alert(error.message);
-		}
-	};
-
-	useEffect(() => {
-		getData();
-	}, []);
-
 	return (
 		<div className="sponsors">
 			<p>Our Sponsors</p>
 			<div>
-				{data?.length > 0 &&
-					data?.map((sponsors, id) => {
-						return (
-							<img key={id} src={sponsors.sponsor_icon_url} alt="sponsers" />
-						);
-					})}
+				<div>
+					<img src={mcdonalds} alt="sponsers" />
+				</div>
+				<div>
+					<img src={starbucks} alt="sponsers" />
+				</div>
+				<div>
+					<img src={dominos} alt="sponsers" />
+				</div>
+				<div>
+					<img src={burgerking} alt="sponsers" />
+				</div>
 			</div>
 		</div>
 	);
