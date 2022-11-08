@@ -1,14 +1,17 @@
-.maincontainer {
-    height: 37vw;
+.getApp {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 8rem 0;
 }
 
-.image {
-    width: 50vw;
-        position: absolute;
-        justify-content: center;
-        align-items: center;
-        left: 27vw;
-    
-        margin-top: 1rem;
-        margin-bottom: 3rem;
+.getApp > img {
+	width: 70%;
+}
+
+@media only screen and (max-width: 740px) {
+	.getApp > img {
+		width: 90%;
+	}
 }
