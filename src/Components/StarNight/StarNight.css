@@ -1,0 +1,31 @@
+.StarNight{
+    margin-top: 5%;
+    background: url('../../Images/starNight1.png') no-repeat;
+    align-items: center;
+    justify-content: space-between;
+    background-position: center;
+    height: 30vw;
+    background-size: contain;
+    position: relative;
+}
+
+.strip{
+    width: 100vw;
+    position: absolute;
+    margin-top: 25vw;
+    z-index: -1;
+}
+
+.circlelftBtn{
+    position: relative;
+    margin-top: 12.5vw;
+    margin-left: 13vw;
+    width: 3.5vw;
+}
+.circlerightBtn{
+    position: relative;
+    margin-top: 12.5vw;
+    margin-left: 65vw;
+    width: 3.5vw;
+    
+}
