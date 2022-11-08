@@ -1,0 +1,14 @@
+.maincontainer {
+    height: 37vw;
+}
+
+.image {
+    width: 50vw;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        left: 27vw;
+    
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+}
