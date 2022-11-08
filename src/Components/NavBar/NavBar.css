@@ -73,7 +73,7 @@
 .nameMenuOpen {
 	position: fixed;
 	top: 0;
-	right: 0;
+	left: 0;
 	z-index: 1000000;
 	width: 100vw;
 	height: 100vh;
