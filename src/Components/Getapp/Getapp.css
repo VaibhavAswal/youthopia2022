@@ -81,11 +81,23 @@
 	.getAppContentB {
 		width: 80%;
 	}
+	.getAppContent {
+		width: 60%;
+	}
 }
 
 @media only screen and (max-width: 1045px) {
 	.getAppContentB {
 		width: 80vw;
 		max-width: 35rem;
+	}
+	.getAppContent {
+		width: 70%;
+	}
+}
+
+@media only screen and (max-width: 600) {
+	.getAppContent {
+		width: 95%;
 	}
 }
